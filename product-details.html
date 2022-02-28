@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, #9be15d, #00e3ae);
+            height: 150vh;
+            font-family: 'Megrim', cursive;
+        }
+
+        .h1-box {
+            text-align: center;
+        }
+
+        .shadow {
+            box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-header {
+            color: #fff;
+            font-size: 3.6rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            text-align: center;
+            margin-top: 3.8rem;
+            transform: skewY(-9deg);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 4.2rem;
+            text-transform: uppercase;
+        }
+
+        .main-header::after {
+            content: "";
+            display: inline;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 10%;
+            left: 0;
+            z-index: -2;
+            transform: skewY(13deg);
+            background-image: linear-gradient(to bottom, #9be15d, #00e3ae);
+        }
+
+        .container {
+            max-width: 40rem;
+            margin: 0 auto;
+        }
+
+        .hero {
+            position: relative;
+            background-color: #fff;
+            height: 15rem;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom right, rgba(154, 225, 93, 0.5), rgba(0, 227, 174, 0.57));
+            opacity: 0.7;
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 12.2rem;
+        }
+
+        .emoji--1 {
+            top: -20%;
+            left: -10%
+        }
+
+        .emoji--2 {
+            top: 0%;
+            left: -20%
+        }
+
+        .emoji--3 {
+            top: 30%;
+            left: 15%;
+        }
+
+        .emoji--4 {
+            top: -30%;
+            left: 15%;
+        }
+
+        .emoji--5 {
+            top: -10%;
+            left: 40%;
+        }
+
+        .emoji--6 {
+            top: -20%;
+            right: 0;
+        }
+
+        .emoji--7 {
+            bottom: 0;
+            right: -10%;
+        }
+
+        .fruit-name {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 2.8rem;
+            background-image: linear-gradient(to bottom right, #9be15d, #00e3ae);
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .details {
+            background-color: #fff;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem;
+            row-gap: 2rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .detail-text {
+            color: #666;
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .btn-add__to__cart:link,
+        .btn-add__to__cart:visited {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            background-image: linear-gradient(to bottom right, #9be15d, #00e3ae);
+            ;
+            display: block;
+            transform: scaleX(1.05) skewX(-20deg);
+            font-weight: 600;
+            text-align: center;
+            padding: 0.8rem 2.4rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 4.8rem;
+            transition: all 0.3s;
+            font-family: sans-serif;
+        }
+
+        .btn-add__to__cart:hover,
+        .btn-add__to__cart:active {
+            transform: scale(1.1, 1.1) skewX(-20deg);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+        }
+        .description{
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            color: #777;
+            line-height: 1.6;
+            padding: 0 2.8rem 6.2rem 2.8rem;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1-box">
+        <h1 class="main-header">🌽 Node Farm 🥦</h1>
+    </div>
+    <div class="container">
+        <div class="shadow">
+            <div class="hero">
+                <span class="emoji emoji--1">🥑</span>
+                <span class="emoji emoji--2">🥑</span>
+                <span class="emoji emoji--3">🥑</span>
+                <span class="emoji emoji--4">🥑</span>
+                <span class="emoji emoji--5">🥑</span>
+                <span class="emoji emoji--6">🥑</span>
+                <span class="emoji emoji--7">🥑</span>
+            </div>
+            <h2 class="fruit-name">Fresh Avocados </h2>
+            <div class="details">
+                <div class="details-grid">
+                    <p class="detail-text">🌍 From Portugal</p>
+                    <p class="detail-text">❤️ Vitamin B, Vitamin Kl</p>
+                    <p class="detail-text">📦 4 🥑</p>
+                    <p class="detail-text">🏷 6.50€</p>
+                </div>
+                <a href="#" class="btn-add__to__cart">🛒 ADD TO SHOPPING CARD (6.50€)</a>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quo omnis commodi
+                    rerum veritatis mollitia est, illum doloremque beatae, ex, non maiores quod. Doloribus ducimus enim
+                    cum placeat, doloremque nemo.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
