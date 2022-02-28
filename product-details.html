@@ -28,6 +28,7 @@
 
         .shadow {
             box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
         }
 
         .main-header {
@@ -71,6 +72,52 @@
             opacity: 0.7;
         }
 
+        .link-back:link,
+        .link-back:visited {
+            font-family: sans-serif;
+            position: absolute;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            top: 2%;
+            left: 5%;
+            z-index: 100;
+            text-decoration: none;
+            color:#777;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 1.4rem;
+            border-radius: 3000px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+        .link-back:hover,
+        .link-back:active{
+            background-color: rgb(178, 235, 129)
+        }
+        .tag-box{
+            position: absolute;
+            right: 0;
+            top:0;
+            height: 110px;
+            width:110px; 
+            border-radius: 50%;
+            transform: translate(40%,-40%);
+            z-index: 22;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to bottom right, #9be15d, #00e3ae);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+
+        }
+        .tag-box h3{
+            font-family: sans-serif;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            transform: skewY(15deg);
+        }
         .emoji {
             position: absolute;
             font-size: 12.2rem;
@@ -162,13 +209,14 @@
             transform: scale(1.1, 1.1) skewX(-20deg);
             box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
         }
-        .description{
+
+        .description {
             font-family: sans-serif;
             font-size: 1.2rem;
             color: #777;
             line-height: 1.6;
             padding: 0 2.8rem 6.2rem 2.8rem;
-            
+
         }
     </style>
 </head>
@@ -179,6 +227,10 @@
     </div>
     <div class="container">
         <div class="shadow">
+            <div class="tag-box">
+                <h3>Organic</h3>
+            </div>
+            <a href="#" class="link-back">👈 Back</a>
             <div class="hero">
                 <span class="emoji emoji--1">🥑</span>
                 <span class="emoji emoji--2">🥑</span>
